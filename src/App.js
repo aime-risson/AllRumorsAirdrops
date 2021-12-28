@@ -33,7 +33,6 @@ const initialState = {
   Open: false,
 };
 function App() {
-  const [airdropState, setAirdropState] = useState(initialState);
   const [airdrops, setAirdrops] = useState([]);
 
   useEffect(() => {
@@ -109,7 +108,7 @@ function App() {
   return (
     <Container fixed style={styles.container}>
       <h1>All Rumors Airdrops</h1>
-      <TableContainer sx={{ maxHeight: "md" }} component={Paper}>
+      <TableContainer sx={{ minHeight: "80vh" }} component={Paper}>
         <Table stickyHeader aria-label="collapsible table">
           <TableHead>
             <TableRow>
